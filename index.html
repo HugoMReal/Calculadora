@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora básica</title>
+    
+</head>
+
+<body>
+     
+    <h1>Calculadora básica</h1> <br>
+
+    <main>   
+
+        <!--usaurio ingresa campo-->  
+
+        <input type="text" id="operando1" placeholder="Operando 1">
+
+        <!--selector de opciones--> 
+
+        <select id="opciones">
+
+            <!--opciones de seleccion, la primera queda seleccionada por defecto-->
+
+            <option id="seleccione" value="seleccion" disabled selected>Seleccione</option>
+
+            <option value="+">más</option>
+
+            <option value="-">menos</option>
+
+            <option value="*">por</option>
+
+            <option value="/">dividido</option>
+
+        </select><br><br>
+
+        <!--usaurio ingresa campo-->      
+
+        <input type="text" id="operando2" placeholder="Operando 2"><br><br>
+
+        <!--boton que llama la funcion calcular-->
+
+        <button class="boton" type="button" onclick="Calcular()">Calcular</button>
+            
+        <p id="resultado">Resultado</p>
+
+        <!--botón para limpiar los campos-->
+
+        <button class="boton" type="text" onclick="Limpiar()">Limpiar</button> 
+
+    </main>
+    
+ <!--estilos (CSS) y funcionalidad (JS)-->
+
+<link rel="stylesheet" href="style.css">
+
+<script src="./main.js"></script>
+   
+</body>
+</html>

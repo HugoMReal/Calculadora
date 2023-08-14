@@ -1,0 +1,108 @@
+/* fuente de google, me parecia tipo calculadora*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* el * selecciona todos los elementos de la pagina*/
+
+*  { 
+
+font-family:Orbitron;
+
+}
+
+/* el cuarto parametro de color le da transparencia, margin 0 auto centra*/
+
+h1 {
+
+    color:rgba(255, 255, 255, 0.8);
+
+    text-align: center;
+
+    margin: 0 auto;
+
+    margin-top: 10%;
+
+}
+
+p {
+
+color:rgb(255, 0, 0,0.9);
+
+font-size: 150%;
+
+text-align: center;
+
+border: 2px solid lightgray;
+
+padding: 10px;
+
+margin: 10 px;
+
+background-color: rgb(173, 216, 230,0.8);
+
+border-radius: 20px;
+
+}
+
+main {
+
+   background-color: rgb(255, 255, 255,0.2);
+   
+   border-radius: 20px;
+
+   padding: 20px;
+
+   max-width: 700px;
+
+   margin: 0 auto;
+
+}
+
+#opciones, #operando1, #operando2 {
+
+    background-color: rgb(173, 216, 230,0.8);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    font-size: 1rem;
+}
+
+body{
+
+    /* imagen a modo de fondo, que se ajuste a la pantalle, por eso cover y no repeat*/
+
+    background-image: url(assets/fondo.gif);
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    justify-content: center;
+
+}
+
+/* las propiedades de los seleccionables son iguales, para darle un sentido*/
+
+button.boton, #opciones {
+
+    background-color: rgb(173, 216, 230,0.8);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: background-color 0.5s;
+
+    cursor:pointer;
+         
+}
+
+button.boton:hover, #opciones:hover {
+
+    background-color:orange;
+
+    font-weight: bolder;
+
+}
